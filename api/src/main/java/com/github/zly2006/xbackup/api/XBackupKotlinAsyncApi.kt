@@ -1,6 +1,6 @@
 package com.github.zly2006.xbackup.api
 
-import org.jetbrains.exposed.sql.Transaction
+import org.jetbrains.exposed.v1.core.Transaction
 import java.nio.file.Path
 
 interface XBackupKotlinAsyncApi: XBackupApi {

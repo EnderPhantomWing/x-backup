@@ -22,7 +22,7 @@ class ModDependencies {
 
 val mod = ModData()
 val deps = ModDependencies()
-val mcVersion = "26.2"
+val mcVersion = "26.3"
 val mcDep = property("mod.mc_dep").toString()
 
 // MC 26.2 is unobfuscated — no remapping needed, use shadowJar directly
@@ -80,7 +80,7 @@ dependencies {
     )
 
     if (deps["poly_lib"].isNotEmpty()) {
-        compileOnly("maven.modrinth:polylib:2.0.6") {
+        compileOnly("maven.modrinth:polylib:2.0.17") {
             exclude(group = "net.fabricmc.fabric-api")
             exclude(group = "dev.architectury")
             exclude(group = "teamreborn")
