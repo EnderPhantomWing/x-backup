@@ -3,7 +3,7 @@
 import com.github.zly2006.xbackup.BackupDatabaseService
 import com.github.zly2006.xbackup.Config
 import kotlinx.serialization.json.Json
-import org.jetbrains.exposed.sql.Database
+import org.jetbrains.exposed.v1.jdbc.Database
 import org.sqlite.SQLiteConfig
 import org.sqlite.SQLiteDataSource
 import java.text.SimpleDateFormat
